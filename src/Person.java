@@ -1,34 +1,39 @@
 
 public class Person {
 	
-	private String name; 
+	private String fname; 
+	private String lname; 
 	private String email; 
 	
+
 	
-	
-	
-	public Person(){
-		
-	}
-	
-	public Person(String name, String email){
-		this.name = name; 
+	public Person(String fname, String lname, String email){
+		this.email = email; 
+		this.lname = lname; 
 		this.email = email; 
 	}
-
-
-
-	public String getName() {
-		return name;
+	
+	public String getFname() {
+		return fname;
 	}
 
 
 
-
-	public void setName(String name) {
-		this.name = name;
+	public void setFname(String fname) {
+		this.fname = fname;
 	}
 
+
+
+	public String getLname() {
+		return lname;
+	}
+
+
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
 
 
 
@@ -38,10 +43,15 @@ public class Person {
 
 
 
-
 	public void setEmail(String email) {
 		this.email = email;
-	} 
+	}
+
+
+
+	public Person(){
+		
+	}
 	
 	
 	
